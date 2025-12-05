@@ -11,8 +11,13 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
- 
+
 Route::get('/records', function () {
     return view('records');
 })->name('records');
+
+Route::get('/applynow', function () {
+    return view('applynow');
+})->name('applynow');
+
 

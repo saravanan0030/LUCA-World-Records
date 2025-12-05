@@ -235,9 +235,8 @@
 
                 <!-- RECORDS DROPDOWN -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/records" data-bs-toggle="dropdown">
-                        Records
-                    </a>
+                      <a href="{{ route('records') }}" class="nav-link dropdown-toggle">Records</a>
+
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Individual</a></li>
                         <li><a class="dropdown-item" href="#">Mass Participation</a></li>
@@ -255,7 +254,7 @@
 
                 <!-- APPLY NOW BUTTON -->
                 <li class="nav-item ms-lg-2">
-                    <a href="#" class="apply-btn nav-link">APPLY NOW</a>
+                    <a href="/applynow" class="apply-btn nav-link">APPLY NOW</a>
                 </li>
 
             </ul>

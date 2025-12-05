@@ -1,7 +1,7 @@
  @include('inc/header')
 
 <section style="padding: 50px 0; text-align: center; font-family: Arial, sans-serif;">
-  <h2 style="color: #1D3F60; font-weight: bold; margin-bottom: 10px; ">SHOW YOUR SUPER SKILLS</h2>
+  <h2 style="color: #1D3F60; font-weight: bold; margin-bottom: 10px;  ">SHOW YOUR SUPER SKILLS</h2>
   <p style="color: #555; font-style: italic; margin-bottom: 40px;">Register for an Official World Record Attempt</p>
 
   <div  >
@@ -108,7 +108,7 @@
         <div class="card-icon">🏅</div>
         <div class="card-title">INDIVIDUAL RECORDS</div>
         <div class="card-description">
-            Do you have a Unique Skill, an Exceptional Talent, or a Remarkable Accomplishment that deserves recognition? Apply and become a World Record Holder.
+            Whether it is a talent, skill, strength challenge, speed achievement, or a unique personal record — this category is for individuals who want to showcase their abilities.
         </div>
     </div>
 
