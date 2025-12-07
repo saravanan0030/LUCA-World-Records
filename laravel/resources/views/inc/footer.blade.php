@@ -1,157 +1,167 @@
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Your Site</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-<body>
-  <!-- rest of site content -->
+<footer class="ewr-footer mx-3 ">
+  <div class="container footer-top  ">
 
-  <footer class="site-footer px-3 mx-3">
-    <div class="footer-wrapper">
-      <!-- Left: Logo -->
-      <div class="footer-logo">
-        <a href="/">
-          <img  src="{{asset('assets/logo.png') }}" alt="Site Logo" width="200px" height="100px" class="h-100 : w-100"/>
-        </a>
-      </div>
+    <!-- Logo + About -->
+    <div class="footer-col">
+<img src="{{ asset('assets/logo.png') }}" class="logo-img w-75   " alt="Luco World Records logo">
 
-      <!-- Center: Contact / Info -->
-      <div class="footer-info">
-        <h3>Contact</h3>
-        <p>📍 Location: India (Global Verification Available)</p>
-        <p>📧 Email: <a href="mailto:info@lucarecords.com">info@lucarecords.com</a></p>
-        <p>📞 Phone: +91  </p>
-        <p>🌐 Website: <a href="https://www.lucarecords.com" target="_blank" rel="noopener">www.lucarecords.com</a></p>
-        <p>📱 Social Media: @lucarecords (Instagram / LinkedIn / YouTube)</p>
-      </div>
+      <p class="footer-about  ">
+         Luca World Records is an organization to identify and promote
+        the individual by their own special interests and talents.
+      </p>
 
-      <!-- Right: Social Icons -->
       <div class="footer-social">
-        <a href="https://www.instagram.com/lucarecords" aria-label="Instagram" target="_blank" rel="noopener">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lucarecords" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.youtube.com/@lucarecords" aria-label="YouTube" target="_blank" rel="noopener">
-          <i class="fab fa-youtube"></i>
-        </a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2025 Luca World Records. All rights reserved.</p>
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>CONTACT</h3>
+
+      <p><i class="fab fa-whatsapp"></i> +918056658840   </p>
+      <p><i class="far fa-envelope"></i> info@lucarecords.com  </p>
+
     </div>
-  </footer>
+
+    <!-- Links -->
+    <div class="footer-col">
+      <h3>USEFUL LINKS</h3>
+      <a href="#">Apply Now</a>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-col">
+      <h3>GET IN TOUCH</h3>
+      <p><i class="fas fa-map-marker-alt"></i>
+        P.O. Box 34722,<br>
+           India (Global Verification Available),<br>
+         chennai floor,<br>
+        Al  Road,  <br>
+        United Arab Emirates
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom ">
+<p>© 2025 Luca World Records. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
 
 <style>
-    /* Reset some basics */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: "Poppins", sans-serif;
 
 
-
-}
-
-/* Footer overall style */
-.site-footer {
-  background-color: #111;
-  color: #ddd;
+    /* Footer Background */
+.ewr-footer {
+  background:  linear-gradient(180deg, #000000, #0d0d0d, #000000);
+  padding-top: 50px;
+  color: #e6e6e6;
   font-family: Arial, sans-serif;
 }
 
-.footer-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+/* GRID */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  padding: 0 20px 40px;
 }
 
 /* Logo */
-.footer-logo img {
-  max-width: 260px;
-  height: auto;
+.footer-logo {
+  width: 130px;
+  margin-bottom: 20px;
 }
 
-/* Info section */
-.footer-info {
-  flex: 1 1 300px;
-  margin: 10px 20px;
+/* About text */
+.footer-about {
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.footer-info h3 {
-  font-size: 1.5rem;
+/* Headings */
+.footer-col h3 {
+  color: #F4C04A;
   margin-bottom: 15px;
-  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
 }
 
-.footer-info p {
-  font-size: 1rem;
-  margin: 6px 0;
+.footer-col h3::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+ background: #F4C04A;
+
+  display: block;
+  margin-top: 6px;
 }
 
-.footer-info a {
-  color: #4aa3ff;
+/* Icons + Text Rows */
+.footer-col p,
+.footer-col a {
+  display: block;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+  font-size: 15px;
   text-decoration: none;
 }
 
-.footer-info a:hover {
-  text-decoration: underline;
+.footer-col a:hover {
+  color: #F4C04A;
 }
 
-/* Social icons */
-.footer-social {
-  display: flex;
-  flex: 0 1 200px;
-  margin: 10px 20px;
-  gap: 15px;
-}
-
+/* Social Icons */
 .footer-social a {
-  color: #ddd;
-  font-size: 1.4rem;
-  transition: color 0.3s, transform 0.3s;
+  color: white;
+  border: 1px solid #aaa;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .footer-social a:hover {
-  color:  #1D3F60;
-  transform: scale(1.2);
+  background: #1D3F60;
+  color:   #F4C04A;
+  border-color: #F4C04A;
 }
 
-/* Footer bottom (copyright) */
+/* Bottom Bar */
 .footer-bottom {
-  border-top: 1px solid #333;
-  padding: 15px 10px;
+  background: #D3A03F;
+  color: black;
   text-align: center;
-  font-size: 0.9rem;
-  color: #888;
+  padding: 12px 0;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
-/* Responsive: on narrow screens, stack vertically */
-@media (max-width: 768px) {
-  .footer-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-info, .footer-social {
-    margin: 15px 0;
-  }
-  .footer-social {
-    justify-content: center;
-  }
-}
+
+
+
+
 
 </style>
+

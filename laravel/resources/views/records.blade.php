@@ -1,6 +1,6 @@
  @include('inc/header')
 
-<section style="padding: 50px 0; text-align: center; font-family: Arial, sans-serif;">
+<section style="padding: 50px 0; text-align: center; font-family: Arial, sans-serif; " class="mx-3 px=3">
   <h2 style="color: #1D3F60; font-weight: bold; margin-bottom: 10px;  ">SHOW YOUR SUPER SKILLS</h2>
   <p style="color: #555; font-style: italic; margin-bottom: 40px;">Register for an Official World Record Attempt</p>
 
@@ -103,7 +103,7 @@
 </style>
 
 <section>
-<div class="cards-container">
+<div class="cards-container mx-3 px-3">
     <div class="card">
         <div class="card-icon">🏅</div>
         <div class="card-title">INDIVIDUAL RECORDS</div>
