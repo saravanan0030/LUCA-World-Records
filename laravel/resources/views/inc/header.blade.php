@@ -267,12 +267,31 @@
         <li class="nav-item dropdown">
           <a href="{{ route('records') }}" class="nav-link dropdown-toggle">Records</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Individual</a></li>
-            <li><a class="dropdown-item" href="#">Mass Participation</a></li>
-            <li><a class="dropdown-item" href="#">Recognition</a></li>
+             <li>
+    <a class="dropdown-item" href="{{ route('Individual') }}">
+        Individual
+    </a>
+</li>
+
+             <li>
+    <a class="dropdown-item" href="{{ route('massparticipation') }}">
+        Mass Participation
+    </a>
+</li>
+
+                        <li>
+    <a class="dropdown-item" href="{{ route('recognition') }}"> Recognition
+     </a>
+</li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+      <li class="nav-item">
+    <a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}"
+       href="{{ route('gallery') }}">
+       Gallery
+    </a>
+</li>
+
         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
         <li class="nav-item ms-lg-2">
           <a href="/applynow" class="apply-btn nav-link">APPLY NOW</a>
