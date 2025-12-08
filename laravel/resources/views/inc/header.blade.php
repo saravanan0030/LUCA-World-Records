@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title> Luca World Records</title>
-  <link rel="icon"  href="{{ asset('assets/logo.png') }}"  width="150px" height="100px"  type="img/png">
+  <link rel="icon"  href="{{ asset('assets/logo.png') }}"   class="w-100" type="img/png">
 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,8 +33,8 @@
 
     /* FIX: logo responsiveness — slightly bigger on desktop, smaller on phones */
     .logo-img {
-        height: 96px; /* slightly bigger */
-        max-height: 96px;
+        height: 150px; /* slightly bigger */
+        max-height: 150px;
         padding-right: -70px;
         transition: transform 0.3s ease;
     }
@@ -136,9 +136,7 @@
         transform: rotate(10deg);
     }
 
-    .navbar-toggler:not(.collapsed) {
-        transform: rotate(90deg);
-    }
+
 
     /* Better look for small screens */
     @media (max-width: 991px) {
@@ -205,7 +203,7 @@
 
 /* Desktop logo */
 .logo-img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -241,11 +239,11 @@
 </head>
 <body>
  <!-- NAVBAR START -->
-<nav class="navbar navbar-expand-lg bg-white px-3 mx-3 sticky-nav">
+<nav class="navbar navbar-expand-lg bg-white px-3 mx-3 sticky-nav ">
   <div class="container-fluid px-lg-4">
     <!-- LOGO -->
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="{{ asset('assets/logo.png') }}" class="logo-img mb-3" alt="Luca World Records logo">
+      <img src="{{ asset('assets/logo.png') }}" class="logo-img " alt="Luca World Records logo">
       <div class="ms-2 d-none d-md-block">
         <h6 class="fw-bold mb-0">Luca World Records<sup>®</sup></h6>
         <small style="font-size: 12px; color: #4a3a24;">Your Achievement, Celebrate Together</small>
@@ -260,7 +258,7 @@
     </button>
 
     <!-- MENU ITEMS -->
-    <div class="collapse navbar-collapse justify-content-end" id="menu">
+    <div class="collapse navbar-collapse justify-content-end md-mt-5" id="menu">
       <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('ouradjudicators') }}">Our Adjudicators</a></li>

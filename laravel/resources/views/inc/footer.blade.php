@@ -9,7 +9,7 @@
 
     <!-- Logo + About -->
     <div class="footer-col">
-<img src="{{ asset('assets/logo.png') }}" class="logo-img w-75   " alt="Luco World Records logo">
+<img src="{{ asset('assets/footerlogo.png') }}" class="logo-img w-50   " alt="Luco World Records logo">
 
       <p class="footer-about  ">
          Luca World Records is an organization to identify and promote

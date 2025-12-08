@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -46,11 +45,8 @@ Route::get('/applynow', function () {
 })->name('recognition');
 
 
- use App\Http\Controllers\FormController;
+use App\Http\Controllers\FormController;
 
-Route::post('/send-form-email', [FormController::class, 'sendEmail'])->name('send.form.email');
-
-
-
-
+Route::post('/send-form-email', [FormController::class, 'sendEmail'])
+    ->name('send.form.email');
 

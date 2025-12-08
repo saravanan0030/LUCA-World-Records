@@ -2,33 +2,91 @@
 
 
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-indicators pb-1 pt-1 d-none d-lg-flex">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
-</div>
+  </div>
 
-  <div class="carousel-inner px-3 ">
-      <div class="carousel-item active">
-          <img src="{{ asset('assets/banner1.webp') }}" class="d-block w-100 carousel-img">
-      </div>
-      <div class="carousel-item">
-          <img src="{{ asset('assets/banner2.webp') }}" class="d-block w-100 carousel-img">
-      </div>
-      <div class="carousel-item">
-          <img src="{{ asset('assets/banner3.jpg') }}" class="d-block w-100 carousel-img">
-      </div>
-      <div class="carousel-item">
-          <img src="{{ asset('assets/banner1.webp') }}" class="d-block w-100 carousel-img">
-      </div>
+  <div class="carousel-inner  px-3">
+    <div class="carousel-item active ">
+      <img src="{{ asset('assets/banner3.jpg') }}" class="d-block w-100 carousel-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ asset('assets/banners-2.jpg') }}" class="d-block w-100 carousel-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ asset('assets/banners-3.jpg') }}" class="d-block w-100 carousel-img">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ asset('assets/banners-4.jpg') }}" class="d-block w-100 carousel-img">
+    </div>
   </div>
 </div>
 
 
 
+
 <style>
+
+/* Desktop */
+.carousel-inner {
+    height: 550px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* keep image centered */
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .carousel-inner {
+        height: 380px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 250px;
+    }
+}
+
+
+/* Default banner height - desktop */
+.carousel-inner {
+    height: 550px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Reduce banner height on MD */
+@media (max-width: 992px) {
+    .carousel-inner {
+        height: 380px !important;
+    }
+}
+
+/* Reduce banner height on SM */
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 250px !important;
+    }
+}
 
 .carousel-indicators button {
     position: relative;
@@ -237,24 +295,18 @@
 
 
 
-
-
-
-
-
-
-
- <section class="py-5 bg-light">
+<section class="py-5 bg-light">
   <div class="container">
     <div class="row justify-content-center text-center g-4 cards-row">
 
       <!-- Card 1 -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-custom">
         <div class="card feature-card h-100 p-4">
-          <div class="icon-box mb-3">
-            <i class="fas fa-user-check"></i>
-          </div>
-          <h5 class="card-title fw-bold">Transparent verification</h5>
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+          <h5 class="card-title fw-bold mt-3">Transparent verification</h5>
           <p class="card-text text-muted">Clear, secure adjudication process.</p>
         </div>
       </div>
@@ -262,10 +314,11 @@
       <!-- Card 2 -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-custom">
         <div class="card feature-card h-100 p-4">
-          <div class="icon-box mb-3">
-            <i class="fas fa-certificate"></i>
-          </div>
-          <h5 class="card-title fw-bold">Certified adjudicators</h5>
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+          <h5 class="card-title fw-bold mt-3">Certified adjudicators</h5>
           <p class="card-text text-muted">Verified experts and official certification.</p>
         </div>
       </div>
@@ -273,10 +326,11 @@
       <!-- Card 3 -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-custom">
         <div class="card feature-card h-100 p-4">
-          <div class="icon-box mb-3">
-            <i class="fas fa-globe"></i>
-          </div>
-          <h5 class="card-title fw-bold">Global recognition</h5>
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+          <h5 class="card-title fw-bold mt-3">Global recognition</h5>
           <p class="card-text text-muted">Records and recognition across countries.</p>
         </div>
       </div>
@@ -284,10 +338,11 @@
       <!-- Card 4 -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-custom">
         <div class="card feature-card h-100 p-4">
-          <div class="icon-box mb-3">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <h5 class="card-title fw-bold">Fast process</h5>
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+          <h5 class="card-title fw-bold mt-3">Fast process</h5>
           <p class="card-text text-muted">Streamlined submission and faster review times.</p>
         </div>
       </div>
@@ -295,10 +350,11 @@
       <!-- Card 5 -->
       <div class="col-12 col-sm-6 col-md-4 col-lg-custom">
         <div class="card feature-card h-100 p-4">
-          <div class="icon-box mb-3">
-            <i class="fas fa-hands-helping"></i>
-          </div>
-          <h5 class="card-title fw-bold">Support & care</h5>
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+          <h5 class="card-title fw-bold mt-3">Support & care</h5>
           <p class="card-text text-muted">Help and guidance through the process.</p>
         </div>
       </div>
@@ -306,8 +362,6 @@
     </div>
   </div>
 </section>
-
-
 
 
 <style>
@@ -321,46 +375,50 @@
 
 /* CARD STYLE */
 .feature-card {
-  border-radius: 15px;
+  position: relative;
+  border-radius: 18px;
   background: #fff;
   min-height: 240px;
-  padding: 35px 20px !important; /* Perfect padding on all devices */
-  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+  padding: 35px 20px !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
   transition: 0.35s ease;
   cursor: pointer;
   text-align: center;
-  position: relative;
 }
 
-/* Icon Styling */
-.icon-box {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin: auto;
-  background:  #1D3F60;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Corner lines */
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #C9A534;
   transition: 0.4s ease;
 }
 
-.icon-box i {
-  font-size: 30px;
-  color: #C9A534;
+.top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+.top-right { top: 15px; right: 15px; border-left: none; border-bottom: none; }
+.bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; }
+.bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+
+/* Hover animation for corners */
+.feature-card:hover .corner {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 0.15;
 }
 
-/* Hover effects */
+/* Hover card transform */
 .feature-card:hover {
-  transform: translateY(-12px) scale(1.04);
-  box-shadow: 0 25px 40px rgba(29, 63, 96, 0.3);
-  background-color: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(29,63,96,0.25);
 }
 
-/* Icon hover animation */
-.feature-card:hover .icon-box {
-  transform: scale(1.15);
-  background: rgba(201,165,52,0.25);
+/* Card title */
+.card-title {
+  transition: color 0.3s ease;
+  color: #0a233d;
 }
 
 .feature-card:hover .card-title {
@@ -368,14 +426,14 @@
   letter-spacing: 1px;
 }
 
-/* Text padding fix */
+/* Card text */
 .card-text {
   padding: 0 10px;
   font-size: 15px;
   line-height: 1.5;
 }
 
-/* Perfect spacing on sm/md devices */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .feature-card {
     min-height: 220px;
@@ -399,10 +457,6 @@
 
 
 
-
-
-
-
  <section class="about-section mx-3 py-5">
   <div class="container py-4">
     <div class="row align-items-center g-4">
@@ -410,7 +464,7 @@
       <!-- LEFT TEXT -->
       <div class="col-12 col-md-6 text-white">
         <h2 class="fw-bold mb-4 about-title">
-          EINSTEIN WORLD RECORDS – <br>
+          LUCA WORLD RECORDS – <br>
           THE BEST PLATFORM TO <br>
           SHOWCASE YOUR TALENT
         </h2>
